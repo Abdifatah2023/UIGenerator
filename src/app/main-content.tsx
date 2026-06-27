@@ -31,7 +31,7 @@ interface MainContentProps {
 }
 
 export function MainContent({ user, project }: MainContentProps) {
-  const [activeView, setActiveView] = useState<"preview" | "code">("preview");
+  const [activeView, setActiveView] = useState<"preview" | "code">("code");
 
   return (
     <FileSystemProvider initialData={project?.data}>
